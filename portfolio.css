@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   background-image: linear-gradient(to bottom right, rgb(177, 65, 247),aqua);
+
+}
+.card{
+    height: 550px;
+    width: 370px;
+    background-color:rgba(48, 15, 68, 0.6);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.imge img {
+    left: 50%;
+    transform: translate(-50%);
+    top: -50px;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    border-radius: 20px;
+    
+}
+.name{
+   color: white;
+   position: absolute;
+   align-items: center;
+   top: 155px;
+   margin-left: 100px;
+}
+.name a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    padding-left: 0px;
+    
+}
+.name a:hover{
+    color:  rgb(32, 250, 29);
+
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    align-self:flex-end;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card:hover > .content{
+    width: 100%;
+    height: 345px;
+    background-color: white;
+    align-self:flex-end;
+    border-radius: 5px;
+    animation: increse 0.8s;
+    overflow: hidden;
+    z-index: 1;
+}
+@keyframes increse {
+    0%{
+        width: 100%;
+    height: 50px;
+    overflow: hidden;
+    }
+    100%{
+        width: 100%;
+    height: 345px;
+    overflow: hidden;
+    }
+    
+}
+.text{
+    color: white;
+    padding-right: 12px;
+    padding-left: 2rem;
+    padding-top: 12rem;
+    font-size: 1.1rem;
+}
+.details{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.skill p{
+    font-size: 22px;
+    padding: 3px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    border-radius: 60px ;
+    height: 10px;
+    /* background-color:  rgb(32, 250, 29); */
+
+    background-color: rgb(211, 211, 211);
+
+}
+.demo{
+    position: relative;
+    display: flex;
+}
+.rangebox{
+    height: 10px;
+    width: 129px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 12px;
+    margin-left: 47px;
+}
+.inside{
+    height: 10px;
+    width: 110px;
+    background-color: rgb(32, 250, 29);
+    border-radius: 30px;
+    
+}
+
+
+
+
+
